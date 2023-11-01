@@ -1,0 +1,80 @@
+/* Estilos para el contenedor principal */
+.detalles-container {
+    flex: 1;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Estilos para la título */
+  .titulo {
+    font-size: 4rem;
+    font-family: serif;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  /* Estilos para la imagen */
+  .imagen {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Estilos para la descripción */
+  .descripcion {
+    flex: 1;
+    font-family: serif;
+    margin: 10px 0;
+    text-align: justify;
+    max-width: 95%; 
+  }
+
+  .subtitulo {
+    font-size: 2rem;
+    font-family: serif;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  /* Estilos para la lista de aleaciones y dispositivos */
+  .relacionados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  /* Estilos para cada elemento de la lista */
+  .columna{
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .aleacion,.dispositivo {
+    font-family: serif;
+    margin: 1px 0;
+  }
+  
+  /* Estilos para imágenes relacionadas */
+  .imagen-relacionada-aleaciones {
+    width: 50px;
+    height: auto;
+    max-height: 50vh;
+    margin-bottom: 50px;
+  }
+  .imagen-relacionada-dispositivos{
+    width: 50px;
+    height: auto;
+    max-height: 50vh;
+    margin-bottom: 50px;
+  }
+  
+  
+  

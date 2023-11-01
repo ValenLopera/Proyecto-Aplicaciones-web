@@ -1,20 +1,24 @@
 import React from 'react'
 import './App.css'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Home from './components/Home'
-import Biomateriales from './components/Biomateriales'
-import Aleaciones from './components/Aleaciones'
-import Dispositivos from './components/Dispositivos'
+import Home from './views/Home'
+import Biomateriales from './views/Biomateriales'
+import Aleaciones from './views/Aleaciones'
+import Dispositivos from './views/Dispositivos'
+import DetallesBiomateriales from './components/DetallesBiomateriales'
 
 function App() {
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' exact Component={Home}></Route>
-        <Route path='/biomateriales' element={<Biomateriales />} />
-        <Route path='/aleaciones' element={<Aleaciones />} />
-        <Route path='/dispositivos' element={<Dispositivos />} />
+        <Route path='/' element={<Home />}></Route>
+        <Route>
+          <Route path="/biomateriales" element={<Biomateriales />} exact></Route>
+          <Route path="/aleaciones" element={<Aleaciones />} exact></Route>
+          <Route path="/dispositivos" element={<Dispositivos />} exact></Route>
+          <Route path="/biomateriales/:id" element={<DetallesBiomateriales />}></Route>
+        </Route>        
       </Routes>
     </BrowserRouter>
   )

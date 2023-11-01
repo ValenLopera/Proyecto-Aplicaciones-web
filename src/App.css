@@ -12,7 +12,7 @@ body {
   justify-content: center;
 }
 
-.background-image {
+.background-image-Home {
   position: absolute;
   top: 0;
   left: 0;
@@ -26,13 +26,64 @@ body {
   z-index: -1; 
 }
 
+.background-image-Biomateriales {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/Fondo_Biomateriales.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px); 
+  height: 100%;
+  z-index: -1; 
+}
+
+.background-image-Aleaciones {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/fondo_Aleaciones.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px); 
+  height: 100%;
+  z-index: -1; 
+}
+
+.background-image-Dispositivos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/cuerpo.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px); 
+  height: 100%;
+  z-index: -1; 
+}
+
 .background-rectangle {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 18%;
-  background-color: rgba(253, 255, 255, 0.689); /* Cambia el color y la opacidad según tus preferencias */
+  height: 15%;
+  background-color: rgba(253, 255, 255, 0.652); /* Cambia el color y la opacidad según tus preferencias */
+  z-index: -1;
+}
+.background-rectangle-biomat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 12%;
+  background-color: rgba(253, 255, 255, 0.437); /* Cambia el color y la opacidad según tus preferencias */
   z-index: -1;
 }
 
