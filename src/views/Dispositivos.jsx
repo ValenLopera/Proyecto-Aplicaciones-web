@@ -11,7 +11,7 @@ function Dispositivos() {
       </div>      
       <div className="grid grid-cols-3 gap-4 mt-20 ">
         {dispositivosData.map((dispositivo) => (
-          <Link key={dispositivo.id} to={`/aleaciones/${dispositivo.id}`}>
+          <Link key={dispositivo.id} to={`/dispositivos/${dispositivo.id}`}>
             <div className="bg-white bg-opacity-70 p-4 rounded-lg w-80 h-52">
               <h2 className="font-bold font-serif text-xl ">{dispositivo.name}</h2>
               <img src={dispositivo.image} alt={dispositivo.name} width={dispositivo.width} height={dispositivo.height} className='flex mx-auto my-auto items-center py-1'/>
