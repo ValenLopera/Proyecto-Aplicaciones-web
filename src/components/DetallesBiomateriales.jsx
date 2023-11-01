@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link,useParams } from 'react-router-dom';
 import biomaterialesData from '../components/BiomaterialesData';
 import aleacionesData from './AleacionesData';
 import dispositivosData from './DispositivosData';
@@ -33,25 +33,33 @@ function DetallesBiomateriales() {
       <img src={biomaterial.image} alt={biomaterial.name} className="imagen" />
       <p className="descripcion">{biomaterial.description}</p>
       <div className="relacionados">
-        <div className="columna">
+        <div className="aleaciones-container ">
           <h2 className='subtitulo'>Aleaciones relacionadas:</h2>
           <ul>
             {aleacionesRelacionadas.map((aleacion) => (
-              <li key={aleacion.id}>
-                <p className='aleacion'>{aleacion.name}</p>
-                <img src={aleacion.image} alt={aleacion.name} className="imagen-relacionada-aleaciones" />
-              </li>
+              <Link to={`/aleaciones/${aleacion.id}`} key={aleacion.id} className="enlace-aleacion">
+                <li>
+                  <div className='aleacion'>
+                    <p>{aleacion.name}</p>
+                    <img src={aleacion.image} alt={aleacion.name} className="imagen-relacionada-aleaciones" />
+                  </div>
+                </li>
+              </Link>
             ))}
           </ul>
         </div>
-        <div className="columna">
+        <div className="dispositivos-container">
           <h2 className='subtitulo'>Dispositivos relacionados:</h2>
           <ul>
             {dispositivosRelacionados.map((dispositivo) => (
-              <li key={dispositivo.id}>
-                <p className='dispositivo'>{dispositivo.name}</p>
-                <img src={dispositivo.image} alt={dispositivo.name} className="imagen-relacionada-dispositivos" />
-              </li>
+              <Link to={`/dispositivos/${dispositivo.id}`} key={dispositivo.id} className="enlace-dispositivo">
+                <li>
+                  <div className='dispositivo'>
+                    <Link to={`/dispositivos/${dispositivo.id}`}>{dispositivo.name}</Link>
+                    <img src={dispositivo.image} alt={dispositivo.name} className="imagen-relacionada-dispositivos" />
+                  </div>
+                </li>
+              </Link>
             ))}
           </ul>
         </div>

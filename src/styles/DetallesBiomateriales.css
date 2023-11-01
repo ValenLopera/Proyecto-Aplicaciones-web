@@ -1,4 +1,10 @@
-/* Estilos para el contenedor principal */
+body {
+  background-color: rgba(0, 0, 0, 0.827);
+  font-family: serif;
+  margin: 0;
+  padding: 0;
+ }
+ 
 .detalles-container {
     flex: 1;
     text-align: center;
@@ -6,75 +12,86 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  /* Estilos para la título */
-  .titulo {
-    font-size: 4rem;
-    font-family: serif;
-    font-weight: bold;
-    margin: 10px 0;
-  }
-  
-  /* Estilos para la imagen */
-  .imagen {
-    max-width: 20%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  /* Estilos para la descripción */
-  .descripcion {
-    flex: 1;
-    font-family: serif;
-    margin: 10px 0;
-    text-align: justify;
-    max-width: 95%; 
-  }
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+ }
+ 
+.titulo {
+  font-size: 60px;
+  font-family: serif;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+ 
+.imagen {
+  max-width: 18%;
+  height: auto;
+  margin: 0 auto;
+}
+ 
+.descripcion {
+  flex: 1;
+  font-family: serif;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: justify;
+  max-width: 100%;
+  color: white; 
+}
 
-  .subtitulo {
-    font-size: 2rem;
-    font-family: serif;
-    font-weight: bold;
-    margin: 10px 0;
-  }
-  
-  /* Estilos para la lista de aleaciones y dispositivos */
-  .relacionados {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  /* Estilos para cada elemento de la lista */
-  .columna{
-    flex: 1;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+.subtitulo {
+  font-size: 30px;
+  font-family: serif;
+  font-weight: bold;
+  margin: 10px 0;
+}
+ 
+.relacionados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+ 
+.aleaciones-container {
+  flex: 1;
+  background-color: #ffffffa6; 
+  border: 1px solid #050505; 
+  border-radius: 10px; 
+  padding: 10px; 
+  margin-bottom: 10px; 
+  margin-right: 20px;
+}
+.dispositivos-container {
+  background-color: #ffffffa6; 
+  border: 1px solid #050505; 
+  border-radius: 10px; 
+  padding: 10px; 
+  margin-left: 20px;
+}
+ .aleacion, .dispositivo{
+  font-family: serif;
+  margin: 5px 0;
+  flex: 1;
+  background-color: #04040496; 
+  border: 1px solid #050505; 
+  border-radius: 10px; 
+  display: flex;
+  align-items: center;
+  padding: 10px; 
+  margin-bottom: 10px;
+ }
 
-  .aleacion,.dispositivo {
-    font-family: serif;
-    margin: 1px 0;
-  }
-  
-  /* Estilos para imágenes relacionadas */
-  .imagen-relacionada-aleaciones {
-    width: 50px;
-    height: auto;
-    max-height: 50vh;
-    margin-bottom: 50px;
-  }
-  .imagen-relacionada-dispositivos{
-    width: 50px;
-    height: auto;
-    max-height: 50vh;
-    margin-bottom: 50px;
-  }
-  
+.imagen-relacionada-aleaciones, .imagen-relacionada-dispositivos {
+  max-width: 80px;
+  max-height: 10vh;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
   
   
