@@ -26,8 +26,8 @@ const biomaterialesData = [
     width: 220, 
     height: 300 ,
     description:'Los hidrogeles son biomateriales poliméricos que se destacan en el campo de la ingeniería de tejidos y aplicaciones médicas debido a su naturaleza altamente hidratada y semejante a los tejidos biológicos. Su característica distintiva es su capacidad para retener grandes cantidades de agua en una matriz tridimensional, lo que les confiere una textura suave y flexible que se asemeja a los tejidos vivos. Los hidrogeles son versátiles y pueden diseñarse para ser biocompatibles y biodegradables, lo como los hace idóneos para su uso en aplicaciones como lentes de contacto, apósitos para heridas, liberación controlada de fármacos, y la ingeniería de tejidos, donde pueden proporcionar un soporte tridimensional para el crecimiento celular y la regeneración de tejidos. Su capacidad de absorber y liberar agua, junto con su capacidad de modificarse químicamente, los convierte en una herramienta valiosa para abordar desafíos médicos y biomédicos específicos.',
-    aleacionesId:[],
-    dispositivosId:[],
+    aleacionesId:[7],
+    dispositivosId:[7],
   },
   { 
     id: 4, 
@@ -37,7 +37,7 @@ const biomaterialesData = [
     height: 200 ,
     description:'El polietileno de alta densidad (PEAD) es un polímero termoplástico que, aunque no es un biomaterial en sí mismo, se ha utilizado en aplicaciones biomédicas debido a su durabilidad, biocompatibilidad y resistencia química. En el contexto de los biomateriales, el PEAD se emplea principalmente para fabricar componentes como prótesis articulares y componentes ortopédicos, gracias a su capacidad para soportar cargas mecánicas y su bajo desgaste en entornos biológicos. Su superficie lisa y biocompatible minimiza la fricción y reduce la irritación en las articulaciones artificiales. Además, su facilidad de procesamiento y moldeado lo hacen útil para una variedad de aplicaciones médicas, lo que lo convierte en un material valioso en la mejora de la calidad de vida de los pacientes que requieren dispositivos médicos de larga duración.',
     aleacionesId:[],
-    dispositivosId:[],
+    dispositivosId:[8],
   },
   { 
     id: 5, 
@@ -47,7 +47,7 @@ const biomaterialesData = [
     height: 300,
     description:'El polietileno de ultra alto peso molecular (UHMWPE) es un biomaterial ampliamente utilizado en aplicaciones médicas debido a sus propiedades sobresalientes. Su estructura molecular única le confiere una alta resistencia a la abrasión y una excelente resistencia al desgaste, lo que lo hace ideal para componentes ortopédicos, como articulaciones artificiales y componentes de implantes. Su biocompatibilidad y baja reactividad química lo hacen seguro para su uso en el cuerpo humano. Además, el UHMWPE es conocido por su capacidad de lubricación interna, lo que reduce la fricción y el desgaste en articulaciones implantadas, promoviendo una mayor durabilidad y una recuperación más rápida en pacientes. Estas características hacen que el UHMWPE sea un material esencial en la fabricación de dispositivos médicos de alto rendimiento que mejoran la calidad de vida de quienes necesitan soluciones ortopédicas y articulares.',
     aleacionesId:[],
-    dispositivosId:[],
+    dispositivosId:[9],
   },
   { 
     id: 6, 

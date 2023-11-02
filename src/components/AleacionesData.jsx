@@ -59,6 +59,16 @@ const aleacionesData = [
       biomaterialesId:[1,9],
       dispositivosId:[6],
     },
+    { 
+      id: 7, 
+      name: 'Aerogel-Silicio', 
+      image:'/aerogel.jpeg', 
+      width: 230, 
+      height: 300 ,
+      description:'El aerogel de silicio es un material extremadamente ligero y poroso que se deriva del silicio. A pesar de su apariencia frágil, es conocido por ser uno de los materiales más livianos y aislantes térmicos del mundo. Su estructura porosa se asemeja a una red tridimensional con pequeñas partículas de silicio. La importancia del aerogel de silicio radica en su capacidad para ofrecer aislamiento térmico extremadamente eficiente, en aplicaciones como en el transporte de órganos para trasplantes, sistemas de liberación de fármacos y sensores para la detección de biomarcadores o partículas específicas en muestras biológicas.      ',
+      biomaterialesId:[3],
+      dispositivosId:[7],
+    },
   ];
 
   export default aleacionesData;

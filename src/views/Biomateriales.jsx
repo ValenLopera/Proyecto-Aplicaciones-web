@@ -15,7 +15,7 @@ function Biomateriales() {
             <div className="bg-white bg-opacity-70 p-4 rounded-lg w-80 h-52 ">
               <h2 className="font-bold font-serif text-xl mb-1">{biomaterial.name}</h2>
               <img src={biomaterial.image} alt={biomaterial.name} width={biomaterial.width} height={biomaterial.height} className='flex mx-auto my-auto '/>
-              {/* Agrega más información del biomaterial si es necesario */}
+              
             </div>
           </Link>
         ))}

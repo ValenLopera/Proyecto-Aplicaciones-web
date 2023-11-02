@@ -60,6 +60,36 @@ const dispositivosData = [
       biomaterialesId:[1,9],
       aleacionesId:[6], 
     },
+    { 
+      id: 7, 
+      name: 'Lentes de contacto', 
+      image:'/lentedecontacto.jpg', 
+      width: 260, 
+      height: 300,
+      description:'Las lentes de contacto son dispositivos ópticos usados para corregir problemas de visión, como miopía, hipermetropía, astigmatismo y presbicia. Están hechas de materiales blandos o rígidos y se ajustan cómodamente sobre la córnea.Proporcionan una alternativa cómoda y estética a los anteojos tradicionales. También se utilizan en el tratamiento de ciertas afecciones oculares, como el queratocono, y para fines cosméticos, como cambiar el color de los ojos. Proporcionan una visión más nítida y amplia que los anteojos, lo que es especialmente útil para actividades deportivas y situaciones en las que los anteojos pueden ser incómodos o inconvenientes. Además, las lentes de contacto son versátiles y se adaptan a una variedad de necesidades visuales.',
+      biomaterialesId:[3],
+      aleacionesId:[7], 
+    },
+    { 
+      id: 8, 
+      name: 'Tubos y envases medicos', 
+      image:'/tubo.jpg', 
+      width: 150, 
+      height: 300,
+      description:'Los envases fabricados con polietileno de alta densidad (HDPE) son recipientes utilizados en la industria de la medicina para almacenar y administrar soluciones intravenosas, como sueros y medicamentos líquidos. Estos envases están hechos de HDPE, un polímero termoplástico conocido por su alta densidad y resistencia.Estos envases se utilizan para administrar líquidos como soluciones salinas, medicamentos, nutrientes y otros tratamientos médicos directamente en el torrente sanguíneo de los pacientes',
+      biomaterialesId:[4],
+      aleacionesId:[], 
+    },
+    { 
+      id: 9, 
+      name: 'Implantes ortopédicos', 
+      image:'/implantecolumna.jpg', 
+      width: 260, 
+      height: 300,
+      description:'',
+      biomaterialesId:[5],
+      aleacionesId:[], 
+    },
   ];
 
   export default dispositivosData;

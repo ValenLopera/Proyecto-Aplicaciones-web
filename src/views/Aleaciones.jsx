@@ -15,7 +15,6 @@ function Aleaciones() {
             <div className="bg-white bg-opacity-60 p-4 rounded-lg w-80 h-52">
               <h2 className="font-bold font-serif text-xl ">{aleacion.name}</h2>
               <img src={aleacion.image} alt={aleacion.name} width={aleacion.width} height={aleacion.height} className='flex mx-auto my-auto items-center py-1'/>
-              {/* Agrega más información del biomaterial si es necesario */}
             </div>
           </Link>
         ))}

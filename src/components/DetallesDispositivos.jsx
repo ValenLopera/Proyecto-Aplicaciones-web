@@ -46,6 +46,9 @@ function DetallesDispositivos() {
                 </li>
               </Link>
             ))}
+            {biomaterialesRelacionados.length === 0 && (
+              <p className="font-family-serif">Este dispositivo no tiene biomateriales relacionados.</p>
+            )}
           </ul>
         </div>
         <div className="dispositivos-container">
@@ -61,6 +64,9 @@ function DetallesDispositivos() {
                 </li>
               </Link>
             ))}
+            {aleacionesRelacionadas.length === 0 && (
+              <p className="font-family-serif">Este dispositivo no tiene aleaciones relacionadas.</p>
+            )}
           </ul>
         </div>
       </div>
