@@ -25,7 +25,6 @@ function DetallesAleaciones() {
   const biomaterialesRelacionados = buscarBiomaterialesPorId(aleacion.biomaterialesId);
   const dispositivosRelacionados = buscarDispositivosPorId(aleacion.dispositivosId);
 
- 
 
   return (
     <div className="detalles-container">
