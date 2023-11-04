@@ -9,6 +9,8 @@ import DetallesBiomateriales from './components/DetallesBiomateriales'
 import DetallesAleaciones from './components/DetallesAleaciones'
 import DetallesDispositivos from './components/DetallesDispositivos'
 import NoEncontrado from './views/NoEncontrado'
+import DetallesProveedores from './components/DetallesProveedores'
+import DetallesPaises from './components/DetallesPaises'
 
 function App() {
 
@@ -23,6 +25,8 @@ function App() {
           <Route path="/biomateriales/:id" element={<DetallesBiomateriales />}></Route>
           <Route path="/aleaciones/:id" element={<DetallesAleaciones />}></Route>
           <Route path="/dispositivos/:id" element={<DetallesDispositivos />}></Route>
+          <Route path="/proveedores/:id" element={<DetallesProveedores />}></Route>
+          <Route path="/paises/:id" element={<DetallesPaises />}></Route>
           <Route path="/no-encontrado" element={<NoEncontrado />}></Route>
         </Route>        
       </Routes>

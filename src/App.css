@@ -10,85 +10,90 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(0.25rem);
+  height: 100%;
+  z-index: -1;
 }
 
 .background-image-Home {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background-image: url('/ADN.jpeg');
-  background-size: cover;
-  background-position: center;
-  filter: blur(4px); 
-  height: 100%;
-  z-index: -1; 
 }
 
 .background-image-Biomateriales {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background-image: url('/Fondo_Biomateriales.jpg');
-  background-size: cover;
-  background-position: center;
-  filter: blur(6px); 
-  height: 100%;
-  z-index: -1; 
 }
 
 .background-image-Aleaciones {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background-image: url('/fondo_Aleaciones.jpg');
-  background-size: cover;
-  background-position: center;
-  filter: blur(4px); 
-  height: 100%;
-  z-index: -1; 
 }
 
 .background-image-Dispositivos {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background-image: url('/cuerpo.jpg');
-  background-size: cover;
-  background-position: center;
-  filter: blur(4px); 
-  height: 100%;
-  z-index: -1; 
 }
 
-.background-rectangle {
+.background-rectangle, .background-rectangle-biomat {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 15%;
-  background-color: rgba(253, 255, 255, 0.652); /* Cambia el color y la opacidad según tus preferencias */
   z-index: -1;
+  min-height: 3rem;
+}
+
+.background-rectangle{
+  background-color: rgba(253, 255, 255, 0.652);
 }
 .background-rectangle-biomat {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 12%;
-  background-color: rgba(253, 255, 255, 0.437); /* Cambia el color y la opacidad según tus preferencias */
-  z-index: -1;
+  background-color: rgba(253, 255, 255, 0.437);
+}
+
+.cuadricula-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cuadricula {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+  gap: 0 1rem;
+  margin-top: 7rem;  
+  justify-items: center;
+}
+
+.cuadricula-background {
+  display: flex; /* Usa flexbox */
+  flex-direction: column; /* Apila los elementos verticalmente */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  background-color: rgba(255, 255, 255, 0.568);
+  border-radius: 0.5rem;
+  text-align: center;
+  width: 20rem;
+  height: 20rem;
+}
+
+.imagen-cuadricula{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  width: 60%;
+  height: 75%;
 }
 
 #root {
-  max-width: 1280px;
+  max-width: 80rem;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -123,7 +128,7 @@ body {
 }
 
 .card {
-  padding: 2em;
+  padding: 2rem;
 }
 
 .read-the-docs {
@@ -131,3 +136,64 @@ body {
 }
 
 
+/* Estilos para pantallas de computadora (ancho mayor o igual a 1024px) */
+@media (min-width: 1024px) {
+  /* Ajusta el tamaño de la fuente y otros estilos para pantallas grandes */
+  .titulo {
+    font-size: 1.875rem;
+  }
+
+  .descripcion {
+    font-size: 1.125rem;
+  }
+  /* Ajusta los estilos de los rectángulos para evitar superposición */
+  .background-rectangle {
+    height: 15%;
+  }
+
+  .background-rectangle-biomat {
+    height: 12%;
+  }
+
+  .cuadricula-background{
+    height: 20rem;
+  }
+
+  /* Agrega otros estilos específicos para computadoras */
+}
+
+/* Estilos para tablets (ancho entre 768px y 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Ajusta el tamaño de la fuente y otros estilos para tablets */
+  .titulo {
+    font-size: 1.5rem;
+  }
+
+  .descripcion {
+    font-size: 1rem;
+  }
+
+  .cuadricula-background {
+    height: 18rem;
+  }
+
+  /* Agrega otros estilos específicos para tablets */
+}
+
+/* Estilos para dispositivos móviles (ancho menor a 768px) */
+@media (max-width: 767px) {
+  /* Ajusta el tamaño de la fuente y otros estilos para dispositivos móviles */
+  .titulo {
+    font-size: 1.25rem;
+  }
+
+  .descripcion {
+    font-size: 0.875rem;
+  }
+
+  .cuadricula-background {
+    height: 16rem;
+  }
+
+  /* Agrega otros estilos específicos para dispositivos móviles */
+}

@@ -3,6 +3,7 @@ import { Link,useParams } from 'react-router-dom';
 import biomaterialesData from './BiomaterialesData';
 import aleacionesData from './AleacionesData';
 import dispositivosData from './DispositivosData';
+import proveedoresData from './ProveedoresData';
 import '../styles/DetallesBiomateriales.css'
 
 function DetallesDispositivos() {
@@ -22,8 +23,13 @@ function DetallesDispositivos() {
     return aleacionesData.filter((aleacion) => ids.includes(aleacion.id));
   };
 
+  const buscarproveedoresPorId = (ids) => {
+    return proveedoresData.filter((proveedor) => ids.includes(proveedor.id));
+  };
+
   const aleacionesRelacionadas = buscarAleacionesPorId(dispositivo.aleacionesId);
   const biomaterialesRelacionados = buscarBiomaterialesPorId(dispositivo.biomaterialesId);
+  const proveedoresRelacionados = buscarproveedoresPorId(dispositivo.proveedoresId);
 
  
 
@@ -66,6 +72,24 @@ function DetallesDispositivos() {
             ))}
             {aleacionesRelacionadas.length === 0 && (
               <p className="font-family-serif">Este dispositivo no tiene aleaciones relacionadas.</p>
+            )}
+          </ul>
+        </div>
+        <div className="dispositivos-container">
+          <h2 className='subtitulo'>Proveedores relacionadas:</h2>
+          <ul>
+            {proveedoresRelacionados.map((proveedor) => (
+              <Link to={`/proveedores/${proveedor.id}`} key={proveedor.id} className="enlace-dispositivo">
+                <li>
+                  <div className='dispositivo'>
+                    <p>{proveedor.name}</p>
+                    <img src={proveedor.image} alt={proveedor.name} className="imagen-relacionada-dispositivos" />
+                  </div>
+                </li>
+              </Link>
+            ))}
+            {proveedoresRelacionados.length === 0 && (
+              <p className="font-family-serif">Este dispositivo no tiene proveedores relacionados.</p>
             )}
           </ul>
         </div>

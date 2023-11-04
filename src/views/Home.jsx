@@ -58,7 +58,7 @@ function Home() {
 
   return (
     <div className='flex flex-col h-screen'>
-      <div className='background-image-Home'></div>
+      <div className='background-image background-image-Home'></div>
       <div className='background-rectangle'></div>
       <div className='flex items-center justify-between p-6'>
         <img src="/BioSearch1.png" alt="Logo biomat" width={300}/>

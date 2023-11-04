@@ -1,25 +1,27 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import biomaterialesData from '../components/BiomaterialesData';
 
 function Biomateriales() {
   return (
     <div>
-      <div className='background-image-Biomateriales'></div>
+      <div className='background-image background-image-Biomateriales'></div>
       <div className='background-rectangle-biomat'>
        <h1 className="items-center font-bold font-serif text-6xl my-4">Biomateriales</h1>
-      </div>      
-      <div className="grid grid-cols-3 gap-4 mt-20 ">
+      </div>     
+      <div className='cuadricula-container'>
+      <div className="cuadricula">
         {biomaterialesData.map((biomaterial) => (
           <Link key={biomaterial.id} to={`/biomateriales/${biomaterial.id}`}>
-            <div className="bg-white bg-opacity-70 p-4 rounded-lg w-80 h-52 ">
+            <div className="cuadricula-background">
               <h2 className="font-bold font-serif text-xl mb-1">{biomaterial.name}</h2>
-              <img src={biomaterial.image} alt={biomaterial.name} width={biomaterial.width} height={biomaterial.height} className='flex mx-auto my-auto '/>
+              <img src={biomaterial.image} alt={biomaterial.name} width={biomaterial.width} height={biomaterial.height} className='imagen-cuadricula '/>
               
             </div>
           </Link>
         ))}
       </div>
+      </div> 
     </div>
   );
 }
