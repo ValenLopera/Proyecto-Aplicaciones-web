@@ -8,7 +8,7 @@ body {
 .detalles-container {
   flex: 1;
   text-align: center;
-  max-width: 90%;
+  max-width: 100%;
   height: 100vh;
   margin: auto;
   display: flex;
@@ -39,15 +39,15 @@ body {
  } */
  
 .titulo {
-  font-size: 60px;
+  font-size: 4rem;
   font-family: serif;
   font-weight: bold;
   color: white;
-  margin-bottom: 10px;
+  margin: 0 auto;
 }
  
 .imagen {
-  max-width: 18%;
+  max-width: 10rem;
   height: auto;
   margin: 0 auto;
 }
@@ -55,35 +55,16 @@ body {
 .descripcion {
   flex: 1;
   font-family: serif;
-  margin: 20px 0;
-  font-size: 16px;
+  margin: 0 auto;
+  font-size: 0.9rem;
   text-align: justify;
   max-width: 100%;
   color: white; 
 }
-/* Media queries para hacerlo más responsive */
-@media (min-width: 640px) {
-  .descripcion {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 768px) {
-  .descripcion {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .descripcion {
-    font-size: 22px;
-  }
-}
-.subtitulo {
-  font-size: 30px;
+.titulo2 {
+  font-size: 1.5rem;
   font-family: serif;
   font-weight: bold;
-  margin: 10px 0;
 }
  
 .relacionados {
@@ -129,6 +110,133 @@ body {
   display: block;
   margin: 0 auto;
   margin-top: 10px;
+}
+
+@media (min-width: 320px) {
+  .titulo {
+    font-size: 3rem; /* Ajusta el tamaño de fuente según tus necesidades */
+  }
+  .descripcion {
+    font-size: 0.55rem; /* Ajusta el tamaño de fuente según tus necesidades */
+  }
+  .imagen {
+    max-width: 45%; /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
+    height: auto; /* Permite que la imagen se ajuste proporcionalmente */
+  }
+  .titulo2 {
+    font-size: 0.6rem; /* Ajusta el tamaño de fuente según tus necesidades */
+  }
+  .aleaciones-container, .dispositivos-container {
+    height: 10.2rem; /* Ajusta la altura a 'auto' para que el contenido se ajuste */
+  }
+  .aleacion, .dispositivo {
+    font-size: 0.8rem;
+    height: 2rem; /* Ajusta la altura a 'auto' para que el contenido se ajuste */
+  }
+  .imagen-relacionada-aleaciones, .imagen-relacionada-dispositivos {
+    max-width: 25px; /* Ajusta el ancho máximo de la imagen según tus necesidades */
+    height: auto; /* Permite que la imagen se ajuste proporcionalmente */
+  }
+}
+
+@media (min-width: 375px) {
+  .titulo {
+    font-size: 3rem; /* Ajusta el tamaño de fuente según tus necesidades */
+  }
+  .descripcion {
+    font-size: 0.6rem; /* Ajusta el tamaño de fuente según tus necesidades */
+  }
+  .imagen {
+    max-width: 45%; /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
+    height: auto; /* Permite que la imagen se ajuste proporcionalmente */
+  }
+  .titulo2 {
+    font-size: 1rem; /* Ajusta el tamaño de fuente según tus necesidades */
+  }
+  .aleaciones-container, .dispositivos-container {
+    height: 10.2rem; /* Ajusta la altura a 'auto' para que el contenido se ajuste */
+  }
+  .aleacion, .dispositivo {
+    height: 2rem; /* Ajusta la altura a 'auto' para que el contenido se ajuste */
+  }
+  .imagen-relacionada-aleaciones, .imagen-relacionada-dispositivos {
+    max-width: 25px; /* Ajusta el ancho máximo de la imagen según tus necesidades */
+    height: auto; /* Permite que la imagen se ajuste proporcionalmente */
+  }
+}
+
+@media (min-width: 425px) {
+  .titulo {
+    font-size: 3rem; /* Ajusta el tamaño de fuente según tus necesidades */
+  }
+  .descripcion {
+    font-size: 0.6rem; /* Ajusta el tamaño de fuente según tus necesidades */
+  }
+  .imagen {
+    max-width: 48%; /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
+    height: auto; /* Permite que la imagen se ajuste proporcionalmente */
+  }
+  .titulo2 {
+    font-size: 0.9rem; /* Ajusta el tamaño de fuente según tus necesidades */
+  }
+  .aleaciones-container, .dispositivos-container {
+    height: 10.2rem; /* Ajusta la altura a 'auto' para que el contenido se ajuste */
+  }
+  .aleacion, .dispositivo {
+    height: 2rem; /* Ajusta la altura a 'auto' para que el contenido se ajuste */
+  }
+  .imagen-relacionada-aleaciones, .imagen-relacionada-dispositivos {
+    max-width: 25px; /* Ajusta el ancho máximo de la imagen según tus necesidades */
+    height: auto; /* Permite que la imagen se ajuste proporcionalmente */
+  }
+}
+@media (min-width: 768px) {
+  .titulo {
+    font-size: 3rem; /* Ajusta el tamaño de fuente según tus necesidades */
+  }
+  .descripcion {
+    font-size: 0.8rem; /* Ajusta el tamaño de fuente según tus necesidades */
+  }
+  .imagen {
+    max-width: 20%; /* Ajusta el ancho máximo de la imagen según tus necesidades */
+    height: auto; /* Permite que la imagen se ajuste proporcionalmente */
+  }
+  .titulo2 {
+    font-size: 1rem; /* Ajusta el tamaño de fuente según tus necesidades */
+  }
+  .aleaciones-container, .dispositivos-container {
+    height: auto; /* Ajusta la altura a 'auto' para que el contenido se ajuste */
+  }
+  .aleacion, .dispositivo {
+    height: auto; /* Ajusta la altura a 'auto' para que el contenido se ajuste */
+  }
+  .imagen-relacionada-aleaciones, .imagen-relacionada-dispositivos {
+    max-width: 50px; /* Ajusta el ancho máximo de la imagen según tus necesidades */
+    height: auto; /* Permite que la imagen se ajuste proporcionalmente */
+  }
+}
+@media (min-width: 1024px) {
+  .titulo {
+    font-size: auto; 
+  }
+  .imagen {
+    height: auto; 
+  }
+  .descripcion {
+    font-size: auto;
+  }
+  .titulo2{
+    font-size: auto;
+  }
+  .aleaciones-container,.dispositivos-container{
+    height: auto;
+  }
+  .aleacion,.dispositivo{
+    height: auto;
+  }
+  .imagen-relacionada-aleaciones,.imagen-relacionada-dispositivos{
+    height: auto;
+  }
 }
   
   

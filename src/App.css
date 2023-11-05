@@ -11,6 +11,24 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding: 1rem;
+}
+
+.titulo{
+  align-items: center;
+  font-weight: bold;
+  font-family: serif;
+  font-size: 3.75rem;
+  line-height: 1;
+  margin-top: 1rem;
+  margin-bottom: 1rem; 
+}
+
+.subtitulo{
+  font-weight: bold;
+  font-family: serif;
+  font-size: 1.25rem; 
+  line-height: 1.75rem; 
 }
 
 .background-image {
@@ -63,33 +81,39 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
+  max-height: 100vh;
 }
 .cuadricula {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
-  gap: 0 1rem;
-  margin-top: 7rem;  
+  grid-template-columns: repeat(3,1fr);
+  gap:1rem;
   justify-items: center;
 }
 
 .cuadricula-background {
-  display: flex; /* Usa flexbox */
-  flex-direction: column; /* Apila los elementos verticalmente */
-  justify-content: center; /* Centra verticalmente */
-  align-items: center; /* Centra horizontalmente */
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
   background-color: rgba(255, 255, 255, 0.568);
   border-radius: 0.5rem;
   text-align: center;
   width: 20rem;
-  height: 20rem;
+  max-width: 100%;
+}
+.imagen-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
 }
 
 .imagen-cuadricula{
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  width: 60%;
-  height: 75%;
+  
 }
 
 #root {
@@ -133,67 +157,4 @@ body {
 
 .read-the-docs {
   color: #888;
-}
-
-
-/* Estilos para pantallas de computadora (ancho mayor o igual a 1024px) */
-@media (min-width: 1024px) {
-  /* Ajusta el tamaño de la fuente y otros estilos para pantallas grandes */
-  .titulo {
-    font-size: 1.875rem;
-  }
-
-  .descripcion {
-    font-size: 1.125rem;
-  }
-  /* Ajusta los estilos de los rectángulos para evitar superposición */
-  .background-rectangle {
-    height: 15%;
-  }
-
-  .background-rectangle-biomat {
-    height: 12%;
-  }
-
-  .cuadricula-background{
-    height: 20rem;
-  }
-
-  /* Agrega otros estilos específicos para computadoras */
-}
-
-/* Estilos para tablets (ancho entre 768px y 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Ajusta el tamaño de la fuente y otros estilos para tablets */
-  .titulo {
-    font-size: 1.5rem;
-  }
-
-  .descripcion {
-    font-size: 1rem;
-  }
-
-  .cuadricula-background {
-    height: 18rem;
-  }
-
-  /* Agrega otros estilos específicos para tablets */
-}
-
-/* Estilos para dispositivos móviles (ancho menor a 768px) */
-@media (max-width: 767px) {
-  /* Ajusta el tamaño de la fuente y otros estilos para dispositivos móviles */
-  .titulo {
-    font-size: 1.25rem;
-  }
-
-  .descripcion {
-    font-size: 0.875rem;
-  }
-
-  .cuadricula-background {
-    height: 16rem;
-  }
-
-  /* Agrega otros estilos específicos para dispositivos móviles */
 }
