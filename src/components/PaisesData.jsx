@@ -2,7 +2,7 @@ const paises_Data = [
     { 
       id: 1, 
       name: 'Colombia',
-      Image: '',
+      Image: '/Colombia.avif',
       width: 150, 
       height: 100,
       proveedoresId:[1,4],
@@ -10,7 +10,7 @@ const paises_Data = [
     {  
         id: 2, 
         name: 'España',
-        Image: '',
+        Image: '/España.webp',
         width: 150, 
         height: 100,
         proveedoresId:[2,7],
@@ -18,7 +18,7 @@ const paises_Data = [
     { 
         id: 3, 
         name: 'China',
-        Image: '',
+        Image: '/China.webp',
         width: 150, 
         height: 100,
         proveedoresId:[3],
@@ -26,7 +26,7 @@ const paises_Data = [
     { 
         id: 4, 
         name: 'Italia',
-        Image: '',
+        Image: '/Italia.webp',
         width: 150, 
         height: 100,
         proveedoresId:[5,6],
@@ -34,7 +34,7 @@ const paises_Data = [
     { 
         id: 5, 
         name: 'Suiza',
-        Image: '',
+        Image: '/Suiza.avif',
         width: 150, 
         height: 100,
         proveedoresId:[8],

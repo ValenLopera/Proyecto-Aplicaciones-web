@@ -14,10 +14,10 @@ function Dispositivos() {
         {dispositivosData.map((dispositivo) => (
           <Link key={dispositivo.id} to={`/dispositivos/${dispositivo.id}`}>
             <div className="cuadricula-background">
-              <h2 className="subtitulo">{dispositivo.name}</h2>
-              <div className='imagen-container'>
+              <h2 className="titulo-cuadricula">{dispositivo.name}</h2>
+              
                 <img src={dispositivo.image} alt={dispositivo.name}  className='imagen-cuadricula'/>
-              </div>
+              
             </div>
           </Link>
         ))}

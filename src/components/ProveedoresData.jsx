@@ -2,7 +2,7 @@ const proveedoresData = [
     { 
       id: 1, 
       name: 'GPC Medical Colombia SAS',
-      Image:'',
+      Image:'/Gpc-Medical-logo.jpg',
       width: 150, 
       height: 100,
       telefono: '+57 3122620329',
@@ -15,7 +15,7 @@ const proveedoresData = [
     { 
       id: 2, 
       name: 'Biotronik Spain SA',  
-      Image:'',
+      Image:'/logobiotronik.png',
       width: 150, 
       height: 300,
       telefono: '+34 917994670',
@@ -28,7 +28,7 @@ const proveedoresData = [
     { 
       id: 3, 
       name: 'Changzhou WastonOrtho Medical Appliance Co., Ltd.', 
-      Image:'',
+      Image:'/wastonorthoLogo.png',
       width: 160, 
       height: 300,
       telefono: '+86-519-86522226',
@@ -41,7 +41,7 @@ const proveedoresData = [
     { 
       id: 4, 
       name: 'BioDentales de Colombia Ltda.',  
-      Image:'',
+      Image:'/Biodentales49-a.png',
       width: 220,
       height: 200,
       telefono: '+57 316 3560022',
@@ -54,7 +54,7 @@ const proveedoresData = [
     { 
       id: 5, 
       name: 'MEDICO SRL' , 
-      Image:'',
+      Image:'/logo_medico2016-1.png',
       width: 190, 
       height: 300,
       telefono: '+39 049 8976755',
@@ -67,7 +67,7 @@ const proveedoresData = [
     { 
       id: 6, 
       name: 'C-Tech Implant', 
-      Image:'',
+      Image:'/CtechLogo.png',
       width: 240, 
       height: 300,
       telefono: '+39 051 66 61 817',
@@ -80,7 +80,7 @@ const proveedoresData = [
     { 
       id: 7, 
       name: 'MBA SURGICAL EMPOWERMENT', 
-      Image:'',
+      Image:'/mbasurgicalempowerment_logo.jpeg',
       width: 260, 
       height: 300,
       telefono: '+34 985 195 505',
@@ -93,7 +93,7 @@ const proveedoresData = [
     { 
       id: 8, 
       name: 'Thommen Medical', 
-      Image:'',
+      Image:'/logoTM.svg',
       width: 150, 
       height: 300,
       telefono: '+41 61 965 90 20',

@@ -34,7 +34,7 @@ function DetallesPaises() {
                 <li>
                   <div className='aleacion'>
                     <p>{proveedor.name}</p>
-                    <img src={proveedor.image} alt={proveedor.name} className="imagen-relacionada-aleaciones" />
+                    <img src={proveedor.Image} alt={proveedor.name} className="imagen-relacionada-aleaciones" />
                   </div>
                 </li>
               </Link>

@@ -40,7 +40,7 @@ function DetallesDispositivos() {
       <p className="descripcion">{dispositivo.description}</p>
       <div className="relacionados">
         <div className="aleaciones-container ">
-          <h2 className='subtitulo'>Biomatriales relacionados:</h2>
+          <h2 className='subtitulo'>Biomateriales relacionados:</h2>
           <ul>
             {biomaterialesRelacionados.map((biomaterial) => (
               <Link to={`/biomateriales/${biomaterial.id}`} key={biomaterial.id} className="enlace-aleacion">
@@ -83,7 +83,7 @@ function DetallesDispositivos() {
                 <li>
                   <div className='dispositivo'>
                     <p>{proveedor.name}</p>
-                    <img src={proveedor.image} alt={proveedor.name} className="imagen-relacionada-dispositivos" />
+                    <img src={proveedor.Image} alt={proveedor.name} className="imagen-relacionada-dispositivos" />
                   </div>
                 </li>
               </Link>
